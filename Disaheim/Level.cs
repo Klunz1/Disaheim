@@ -10,6 +10,6 @@ namespace Disaheim
     {
         medium,
         low,
-        high,
+        high
     }
 }
