@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Disaheim;
 
-namespace Disaheim
+
+namespace UtilityLib
 {
     public class Utility
     {
@@ -30,6 +32,21 @@ namespace Disaheim
                 value = 27.5;
                 }
             return value;
+        }
+        public double GetValueOfCourse(Course course) 
+        {
+            int courseCost = 0;
+            int restCost=0;
+
+            int fullHourCost = course.DurationInMinutes / 60;
+            
+            if (course.DurationInMinutes % 60 > 0)
+            {
+                restCost = 875;
+            }
+
+            courseCost = (fullHourCost * 875) + restCost;
+            return courseCost;
         }
     }
 }

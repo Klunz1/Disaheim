@@ -13,12 +13,15 @@ namespace Disaheim
         public List<Book> Books { get; set; }
 
         public List<Amulet> Amulets { get; set; }
+
+        public List<Course> Courses { get; set; }
         
         //Initialiser properties i constructor
         public Controller()
         {
             Books = new List<Book>();
             Amulets = new List<Amulet>();
+            Courses= new List<Course>();
 
         }
         //de to metoder der tilføjer bøger og amuletter
@@ -29,6 +32,10 @@ namespace Disaheim
         public void AddToList(Amulet amulet)
         {
             Amulets.Add(amulet);
+        }
+        public void AddToList(Course course) 
+        {
+            Courses.Add(course);
         }
                 
         

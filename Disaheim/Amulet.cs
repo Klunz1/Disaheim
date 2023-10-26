@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Disaheim
 {
-    public class Amulet
+    public class Amulet : Merchandise
     {
         //properties implementeres
-        public string ItemId { get; set; }
         public string Design { get; set; }
         public Level Quality { get; set; }
 
